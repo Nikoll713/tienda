@@ -18,7 +18,7 @@ class CreateProductosTable extends Migration
             $table->string('nombre');
             $table->text('descripcion');
             $table->unsignedDecimal('precio_cantidad',$precision = 8, $scale = 2);
-            $table->unsignedInteger('cantidad');
+            $table->unsignedInteger('existencia');
         });
     }
 
